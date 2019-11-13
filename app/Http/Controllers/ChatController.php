@@ -23,8 +23,8 @@ class ChatController extends Controller
     {
         session_start();
         $this->client = new \GuzzleHttp\Client();
-        $this->rasa_url = 'http://localhost:5005/webhooks/rest/webhook';
-        $this->rasa_ip = 'localhost';
+        $this->rasa_url = 'http://52.148.88.134:5005/webhooks/rest/webhook';
+        $this->rasa_ip = '52.148.88.134';
     }
 
     public function index()
