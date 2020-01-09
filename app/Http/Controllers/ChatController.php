@@ -27,11 +27,6 @@ class ChatController extends Controller
         $this->rasa_ip = '52.148.88.134';
     }
 
-    public function index()
-    {
-        echo 'It\'s Work!';
-    }
-
     public function nowTime(Request $request) {
         date_default_timezone_set('Asia/Jakarta');
 

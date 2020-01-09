@@ -19,6 +19,7 @@ $router->post('/apply', 'ChatController@apply');
 $router->post('/login', 'MahasiswaController@login');
 $router->get('/logout', 'MahasiswaController@logout');
 $router->get('/user/{nim}', 'MahasiswaController@get_user');
+$router->get('/semester/{nim}', 'MahasiswaController@get_semester');
 $router->get('/riwayat/{nim}', 'MahasiswaController@get_history');
 
 $router->get('/', function () use ($router) {
